@@ -12,8 +12,7 @@ def test_validator_with_valid_data():
     assert result["is_valid"] is True
     
     
-@pytest.mark.parametrize("path", ["/typecheck"])
-def test_type_summary_basic(path):
+def test_type_summary_basic():
     
     tc = TypeChecker()
     
